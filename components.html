@@ -1,0 +1,137 @@
+    <!DOCTYPE html>
+    <html lang="pt">
+        <head>
+            <title></title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="cruix.css">
+            <script src="cruix.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        </head>
+        <body class="vp-mob">
+            <main>
+                <h1>Cruix showcase</h1>
+                <section class="content">
+                    <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <h3>Header 3</h3>
+                    <h4>Header 4</h4>
+                    <h5>Header 5</h5>
+                    <h6>Header 6</h6>
+                    <p>Paragraph</p>
+                    <p>Long paragraph: Enim commodo consequat aute sit. Esse ut ad quis esse qui deserunt nulla. Sunt minim aliqua laboris ipsum exercitation nulla excepteur officia tempor laboris aliquip. Culpa laboris est culpa qui sit non in consectetur mollit ex elit anim. Do laborum reprehenderit do aliquip ut et commodo nostrud. Voluptate ad veniam commodo sint id aute ex laborum velit. Excepteur proident laborum dolore laborum reprehenderit adipisicing ullamco.
+                    Cupidatat consectetur exercitation labore sit do dolor et veniam magna laboris eiusmod.    
+                    </p>
+                    <a href="#">A link</a>
+                    <section  class="">
+                        <h2>Coloring text</h2>
+                        <span class="tag bg-r">Red</span>
+                        <span class="tag bg-g">Green</span>
+                        <span class="tag bg-b">Blue</span>
+                    </section>
+                </section>
+                <section>
+                    <h2>Form components</h2>
+                    <form>
+                        <label class="group">
+                            Text field: 
+                            <input type="text" placeholder="Text field" />
+                        </label>
+                        <div class="group">
+                            <label for="inputPassword">Password field:</label>
+                            <input type="password" id="inputPassword" placeholder="Password field" />
+                        </div>
+                        <div class="group">
+                            <label>Number field:</label>
+                            <input type="number" placeholder="Number field" />
+                        </div>
+                        <label class="group">
+                            Email field: 
+                            <input type="email" placeholder="Email field" />
+                        </label>
+                        <label class="group">
+                            Input file: 
+                            <input type="file" id="a" placeholder="Input file" />
+                        </label>
+                    </form>
+                </section>
+                <section>
+                    <h2>Grid Flex</h2>
+                    <div class="row flex">
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                        <span class="col tag bg-b">COL 1</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                        <span class="col col-2 tag bg-b">COL 2</span>
+                    </div>
+                    <div class="row flex">
+                        <span class="col col-3 tag bg-b">COL 3</span>
+                        <span class="col col-6 tag bg-b">COL 6</span>
+                        <span class="col col-3 tag bg-b">COL 3</span>
+                    </div>
+                </section>
+                <section>
+                    <h2>Responsive Rules</h2>
+                    <section>
+                        <h3>When extra large</h3>
+                        <div class="row">
+                            <span class="col col-6 bg-r when-xlg tag">When Extra large (when-xlg)</span>
+                            <span class="col col-6 bg-g until-xlg tag">Until Extra large (until-xlg)</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>When large</h3>
+                        <div class="row">
+                            <span class="col col-6 bg-r when-lg tag">When large (when-lg)</span>
+                            <span class="col col-6 bg-g until-lg tag">Until large (until-lg)</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>When medium (normal) size</h3>
+                        <div class="row">
+                            <span class="col col-6 bg-r when-md tag">When Medium (when-md)</span>
+                            <span class="col col-6 bg-g until-md tag">Until Medium (until-md)</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>When small size</h3>
+                        <div class="row">
+                            <span class="col col-6 bg-r when-sm tag">When Small (when-sm)</span>
+                            <span class="col col-6 bg-g until-sm tag">Until Small (until-sm)</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>When extra small</h3>
+                        <div class="row">
+                            <span class="col col-6 bg-r when-xsm tag">When Extra small (when-xsm)</span>
+                            <span class="col col-6 bg-g until-xsm tag">Until Extra small (until-xsm)</span>
+                        </div>
+                    </section>
+                </section>
+            </main>
+            <section>
+                <h2>Form with Grid flex</h2>
+                <form class="strict max-w-sm">
+                    <div class="row flex">
+                        <input class="col col-3" type="text" placeholder="Nome" />
+                        <input class="col col-9" type="text" placeholder="Sobrenome" />
+                    </div>
+                </form>
+            </section>
+        </body>
+    </html>
