@@ -30,6 +30,16 @@ $invertedFontColor : white;
 .bg-l{background-color: $colorLight}
 .bg-d{background-color: $colorDark}
 
+/*Invert colors definitions*/
+body.invert-color,
+body.invert-color #{$controls}{
+    background-color: $colorDark;
+}
+
+body.invert-color *{
+    color: $colorLight;
+}
+
 /*Typo colors*/
 .co-r{color: $darkenRed_2}
 .co-g{color: $darkenGreen_2}
@@ -39,8 +49,3 @@ $invertedFontColor : white;
 
 /*Components colors*/
 .tag{color: $colorLight}
-
-
-#{$textControls}{
-    color : pink;
-}
