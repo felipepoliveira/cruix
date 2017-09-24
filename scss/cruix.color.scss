@@ -1,0 +1,46 @@
+//Default RGB colors
+$colorRed : #c42121;
+$colorGreen : #21c454;
+$colorBlue : #218ac4;
+$colorLight : #EEEEEE;
+$colorDark : #1d1d1d;
+
+//Darker colors
+$darkenRed_1 : darken($colorRed, 10%);
+$darkenRed_2 : darken($colorRed, 25%);
+$darkenRed_3 : darken($colorRed, 50%);
+
+$darkenGreen_1 : darken($colorGreen, 10%);
+$darkenGreen_2 : darken($colorGreen, 25%);
+$darkenGreen_3 : darken($colorGreen, 50%);
+
+$darkenBlue_1 : darken($colorBlue, 10%);
+$darkenBlue_2 : darken($colorBlue, 25%);
+$darkenBlue_3 : darken($colorBlue, 50%);
+
+
+//Typo colors
+$fontColor : black;
+$invertedFontColor : white;
+
+/*Background colors*/
+.bg-r{background-color: $colorRed}
+.bg-g{background-color: $colorGreen}
+.bg-b{background-color: $colorBlue}
+.bg-l{background-color: $colorLight}
+.bg-d{background-color: $colorDark}
+
+/*Typo colors*/
+.co-r{color: $darkenRed_2}
+.co-g{color: $darkenGreen_2}
+.co-b{color: $darkenBlue_2}
+.co-l{color: $colorLight}
+.co-d{color: $colorDark}
+
+/*Components colors*/
+.tag{color: $colorLight}
+
+
+#{$textControls}{
+    color : pink;
+}

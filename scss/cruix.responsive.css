@@ -1,0 +1,121 @@
+/*
+pc screen
+xlg:    2590px
+lg:     1610px
+md:     1000px
+sm:     610px;
+xsm:    370px;
+--------------------------------------
+mobile screen
+lg:     770px
+md:     480px
+sm:     290px;
+*/
+
+/*Responsiveness*/
+.max-w-xlg{
+    max-width: 2590px;
+    width: 100%;
+}
+
+.max-w-lg{
+    max-width: 1610px;
+    width: 100%;
+}
+
+.max-w-md{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.max-w-sm{
+    max-width: 610px;
+    width: 100%;
+}
+
+.max-w-xsm{
+    max-width: 370px;
+    width: 100%;
+}
+
+/*Default viewport*/
+.content.xlg{max-width: 2590px;}
+.content.lg{max-width: 1610px;}
+.content.sm{max-width: 610px;}
+.content.xsm{max-width: 370px;}
+
+/*Mobile viewport*/
+*.vp-mob .content.lg{max-width: 770px;}
+*.vp-mob .content{max-width: 480px;}
+*.vp-mob .content.sm{max-width: 270px;}
+
+/*BREAKPOINTS*/
+.until-vp-mob, 
+.until-sm,
+.until-xsm,
+.until-md,
+.until-lg,
+.until-xlg,
+.when-sm,
+.when-xsm,
+.when-md,
+.when-lg,
+.when-xlg{
+    display: none;
+}
+
+/*Until default extra large viewport (vp-xlg) */
+@media (max-width: 2590px) {
+    .until-xlg{display: unset;}
+}
+
+/*When default extra large viewport (vp-xlg) */
+@media (min-width: 2590px) {
+    .when-xlg{display: unset;}
+}
+
+/*Until default large viewport (vp-lg) */
+@media (max-width: 1610px) {
+    .until-lg{display: unset;}
+}
+
+/*When default large viewport (vp-lg) */
+@media (min-width: 1610px) {
+    .when-lg{display: unset;}
+}
+
+
+/*Until default viewport (vp-md) */
+@media (max-width: 1000px) {
+    .until-md{display: unset;}
+}
+
+/*When default viewport (vp-md) */
+@media (min-width: 1000px) {
+    .when-md{display: unset;}
+}
+
+
+/*Until default small viewport (vp-sm) */
+@media (max-width: 610px) {
+    .until-sm{display: unset;}
+
+    /*Grid break*/
+    .col{display: block;}
+    .row.flex{ display: unset;}
+}
+
+/*When default small viewport (vp-sm) */
+@media (min-width: 610px) {
+    .when-sm{display: unset;}
+}
+
+/*Until default extra small viewport (vp-xsm) */
+@media (max-width: 370px) {
+    .until-xsm{display: unset;}
+}
+
+/*When default extra small viewport (vp-xsm) */
+@media (min-width: 370px) {
+    .when-xsm{display: unset;}
+}

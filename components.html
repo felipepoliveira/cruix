@@ -4,11 +4,11 @@
             <title></title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="cruix.css">
+            <link rel="stylesheet" href="css/cruix.css">
             <script src="cruix.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         </head>
-        <body class="vp-mob">
+        <body>
             <main>
                 <h1>Cruix showcase</h1>
                 <section class="content">
@@ -35,24 +35,34 @@
                     <form>
                         <label class="group">
                             Text field: 
-                            <input type="text" placeholder="Text field" />
+                            <input class="control" type="text" placeholder="Text field" />
                         </label>
                         <div class="group">
                             <label for="inputPassword">Password field:</label>
-                            <input type="password" id="inputPassword" placeholder="Password field" />
+                            <input class="control" type="password" id="inputPassword" placeholder="Password field" />
                         </div>
                         <div class="group">
                             <label>Number field:</label>
-                            <input type="number" placeholder="Number field" />
+                            <input class="control" type="number" placeholder="Number field" />
                         </div>
                         <label class="group">
                             Email field: 
-                            <input type="email" placeholder="Email field" />
+                            <input class="control" type="email" placeholder="Email field" />
                         </label>
                         <label class="group">
                             Input file: 
-                            <input type="file" id="a" placeholder="Input file" />
+                            <input class="control" type="file" id="a" placeholder="Input file" />
                         </label>
+                    </form>
+                </section>
+                <section>
+                    <h2>Form sizing</h2>
+                    <form>
+                        <input type="text" class="row flex xsm" placeholder="Extra small field" />
+                        <input type="text" class="row flex sm" placeholder="Small field" />
+                        <input type="text" class="row flex" placeholder="Medium field" />
+                        <input type="text" class="row flex lg" placeholder="Large field" />
+                        <input type="text" class="row flex xlg" placeholder="Extra large field" />
                     </form>
                 </section>
                 <section>

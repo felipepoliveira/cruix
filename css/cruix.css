@@ -1,0 +1,40 @@
+/*Background colors*/
+.bg-r {
+  background-color: #c42121; }
+
+.bg-g {
+  background-color: #21c454; }
+
+.bg-b {
+  background-color: #218ac4; }
+
+.bg-l {
+  background-color: #EEEEEE; }
+
+.bg-d {
+  background-color: #1d1d1d; }
+
+/*Typo colors*/
+.co-r {
+  color: #570f0f; }
+
+.co-g {
+  color: #0f5725; }
+
+.co-b {
+  color: #0f3d57; }
+
+.co-l {
+  color: #EEEEEE; }
+
+.co-d {
+  color: #1d1d1d; }
+
+/*Components colors*/
+.tag {
+  color: #EEEEEE; }
+
+input[type=text], input[type=email] {
+  color: pink; }
+
+/*# sourceMappingURL=cruix.css.map */

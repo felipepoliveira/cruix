@@ -1,0 +1,26 @@
+/*Typography*/
+h1{font-size: 40px;}
+h2{font-size: 32px;}
+h3{font-size: 26px;}
+h4{font-size: 22px;}
+h5{font-size: 20px;}
+h6{font-size: 18px;}
+
+h1, h2{margin: 0px 0px 18px 0px;}
+
+h3, h4, h5{margin: 0px 0px 10px 0px;}
+
+h6{margin: 0px 0px 6px 0px;}
+
+.f-md, input{font-size: 18px;}
+.f-xsm, input.xsm{font-size: 12px;}
+.f-sm, input.sm{font-size: 14px;}
+.f-lg, input.lg{font-size: 24px;}
+.f-xlg, input.xlg{font-size: 32px;}
+
+p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tag{font-size: 14px;}
