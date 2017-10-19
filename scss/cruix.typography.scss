@@ -1,5 +1,12 @@
 $defaultFontFamily : "Roboto, 'Sans Serif', Arial";
 
+@mixin text-align($selector, $value){
+    #{$selector}{
+        text-align: $value;
+        *{text-align: $value;}
+    }
+}
+
 *{
     font-family: $defaultFontFamily;
 }
@@ -7,3 +14,8 @@ $defaultFontFamily : "Roboto, 'Sans Serif', Arial";
 a{
     text-decoration: none;
 }
+
+@include text-align(".text-center", center);
+@include text-align(".text-left", left);
+@include text-align(".text-justify", justify);
+@include text-align(".text-right", right);

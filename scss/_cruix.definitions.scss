@@ -2,16 +2,11 @@
     @return input button select textarea;
 }
 
-@function cruixPercentageUnits(){
+@function cruixRelativeUnits(){
 
-    //Values from 10 to 100 in 10 step
-    $percentage : 10;
+    
 
-    @for $i from 2 through 10{
-        $percentage : append($percentage, $i * 10);
-    }
-
-    @return $percentage;
+    @return 0 50 100;
 }
 
 @function cruixTextControls(){

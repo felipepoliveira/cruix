@@ -3,7 +3,7 @@
 $space-xsm : 4px;
 $space-sm: 8px;
 $space-md: 24px;
-$space-lg: 48px;
+$space-lg: 250px;
 $space-xlg: 128px;
 
 $spaceList : $space-xsm $space-sm $space-md $space-lg $space-xlg;
@@ -46,11 +46,46 @@ body{
     @include responsive-w;
 }
 
+.container-flex{
+    display: flex;
+    @include responsive-w;
+}
+
+.container-flex > *{
+    flex: 1;
+}
+
 //Display section
-@include parentAndChild("d-block", block);
-@include parentAndChild("d-flex", flex);
-@include parentAndChild("d-inline", inline);
-@include parentAndChild("d-inline-block", inline-block);
+@include rule(".d-block", display, block);
+@include rule(".d-flex", display, flex);
+@include rule(".d-inline", display, inline);
+@include rule(".d-inline-block", display, inline-block);
+
+//--Flex
+//Create flex grid from 1 to $gridColumns
+@for $i from 1 through $gridColumns{
+    @include rule(".flex-#{$i}", flex, $i);
+}
+
+//Flex grow and shrink
+@include rule(".flex-grow-0", flex-grow, 0);
+@include rule(".flex-grow-1", flex-grow, 1);
+@include rule(".flex-shrink-0", flex-shrink, 0);
+@include rule(".flex-shrink-1", flex-shrink, 1);
+
+//Align
+.flex-ai-stretch{align-items: stretch;}
+.flex-ai-center{align-items: center;}
+.flex-ai-fs{align-items: flex-start;}
+.flex-ai-fe{align-items: flex-end;}
+.flex-ai-baseline{align-items: baseline;}
+
+//Justify content
+.flex-jc-fs{justify-content: flex-start}
+.flex-jc-fe{justify-content: flex-end}
+.flex-jc-center{justify-content: center}
+.flex-jc-sb{justify-content: space-between}
+.flex-jc-sa{justify-content: space-around}
 
 .m-x-auto{
     @include m-x-auto;
@@ -64,6 +99,21 @@ body{
     position: fixed;
 }
 
-@include responsiveStylesBoxSizing("m", "margin", $spaceList);
-@include responsiveStylesBoxSizing("p", "padding", $spaceList);
-@include responsiveStyles("r", "right", $spaceList);
+@include responsiveStylesBoxSizing(".ma", margin, $spaceList);
+@include responsiveStylesBoxSizing(".pa", padding, $spaceList);
+
+@include responsiveStyles(".top", "top", $spaceList);
+@include responsiveStylesRelativeSizing(".top", top);
+
+@include responsiveStyles(".right", "right", $spaceList);
+@include responsiveStylesRelativeSizing(".right", right);
+
+@include responsiveStyles(".bottom", "bottom", $spaceList);
+@include responsiveStylesRelativeSizing(".bottom", bottom);
+
+@include responsiveStyles(".left", "left", $spaceList);
+@include responsiveStylesRelativeSizing(".left", left);
+
+@include responsiveStylesRelativeSizing(".w", "width");
+@include responsiveStylesRelativeSizing(".h", "height");
+@include responsiveStylesRelativeSizing(".s", "height" "width");

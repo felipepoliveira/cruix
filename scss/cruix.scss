@@ -1,12 +1,33 @@
+//
 @import "_cruix.definitions.scss";
 @import "cruix.functions.scss";
 
+//--VARIABLES BY cruix.definitions.scss
 $controls : cruixControls();
-$percentageUnits : cruixPercentageUnits();
+$gridColumns : 12;
+$relativeUnits : cruixRelativeUnits();
 $textControls : cruixTextControls();
 
+/*  
+    cruix.color.scss
+    -Define the colors used in the cruix
+*/
 @import "cruix.color.scss";
+/*
+    cruix.layout.scss
+    -Define the layout configurations
+*/
 @import "cruix.layout.scss";
 
-/*Modules*/
+/*
+    cruix.typhography.scss
+    -Define the typography data used in the cruix    
+*/
+@import "cruix.typography.scss";
+
+//--MODULES--
+/*
+    cruix.components.scss
+    -The cruix embedded components
+*/
 @import "cruix.components.scss";
