@@ -1,0 +1,19 @@
+@function cruixControls(){
+    @return input button select textarea;
+}
+
+@function cruixPercentageUnits(){
+
+    //Values from 10 to 100 in 10 step
+    $percentage : 10;
+
+    @for $i from 2 through 10{
+        $percentage : append($percentage, $i * 10);
+    }
+
+    @return $percentage;
+}
+
+@function cruixTextControls(){
+    @return "input[type=text]" "input[type=email]" "input[type=password]";
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,CAAC;EACG,WAAW,EAHM,6BAA6B;;AAMlD,CAAC;EACG,eAAe,EAAE,IAAI",
+"sources": ["cruix.typography.scss"],
+"names": [],
+"file": "cruix.typography.css"
+}

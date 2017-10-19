@@ -1,0 +1,10 @@
+@mixin border-1{
+    border: 1px solid $colorDark;
+    border-radius: 8px;
+}
+
+.badge{
+    @include border-1;
+    padding: $space-xsm $space-sm;
+    text-align: center;
+}

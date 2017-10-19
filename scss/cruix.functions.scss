@@ -1,0 +1,42 @@
+$responsiveUnits : xsm sm md lg xlg;
+
+@mixin parentAndChild($prefix, $display){
+    .#{$prefix}{
+        display: $display;
+    }
+
+    .#{$prefix}-on-child > *{
+        display: $display;
+    }
+}
+
+@mixin responsiveStyles($prefix, $props, $values){
+    #{unquote(".#{$prefix}-0")}{
+        //Get each property with the values
+        @each $prop in $props{
+            #{$prop} : 0px;
+        }
+    }
+    //Get each responsive unit (defined in cruix.scss)
+    @each $responsiveUnit in $responsiveUnits {
+        $i : index($responsiveUnits, $responsiveUnit);
+
+        //Create the CSS rule for the given prefix-currentUnit
+        .#{$prefix}-#{$responsiveUnit} { 
+
+            //Get each property with the values
+            @each $prop in $props{
+                #{$prop} : nth($spaceList, $i);
+            }
+        }
+    }
+}
+
+@mixin responsiveStylesBoxSizing($prefix, $prop, $values){
+    @include responsiveStyles(unquote("#{$prefix}-t"), unquote("#{$prop}-top"), $values);
+    @include responsiveStyles(unquote("#{$prefix}-r"), unquote("#{$prop}-right"), $values);
+    @include responsiveStyles(unquote("#{$prefix}-b"), unquote("#{$prop}-bottom"), $values);
+    @include responsiveStyles(unquote("#{$prefix}-l"), unquote("#{$prop}-left"), $values);
+    @include responsiveStyles(unquote("#{$prefix}-x"), unquote("#{$prop}-left") unquote("#{$prop}-right"), $values);
+    @include responsiveStyles(unquote("#{$prefix}-y"), unquote("#{$prop}-top") unquote("#{$prop}-bottom"), $values);
+}

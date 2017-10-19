@@ -1,4 +1,12 @@
-$controls : "input, button, select, textarea";
-$textControls : "input[type=text], input[type=email]";
+@import "_cruix.definitions.scss";
+@import "cruix.functions.scss";
+
+$controls : cruixControls();
+$percentageUnits : cruixPercentageUnits();
+$textControls : cruixTextControls();
 
 @import "cruix.color.scss";
+@import "cruix.layout.scss";
+
+/*Modules*/
+@import "cruix.components.scss";
